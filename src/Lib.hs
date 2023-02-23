@@ -1,6 +1,6 @@
 module Lib
-    ( someFunc
+    ( isEven
     ) where
 
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
+isEven :: Integer -> Bool
+isEven n = n `mod` 2 == 0

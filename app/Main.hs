@@ -18,3 +18,5 @@ main = do
     input <- getLine
     let n = read input :: Integer
     putStrLn ("You entered: " ++ show n)
+
+    putStrLn (show n ++ " is even?: " ++ show (isEven n))
