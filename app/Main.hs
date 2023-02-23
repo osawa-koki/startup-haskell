@@ -32,6 +32,10 @@ main = do
     {- ループ処理 -}
     putStrLn ("Factorial of " ++ show n ++ " is " ++ show (factorial n))
 
+    {- 配列 -}
+    let langs = ["COBOL", "FORTRAN", "BASIC", "LISP", "Pascal"]
+    mapM_ putStrLn [lang ++ "!" | lang <- langs]
+
     {- パッケージの利用 -}
     let width = 100
         height = 100
