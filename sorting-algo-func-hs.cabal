@@ -4,11 +4,11 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 
-name:           sorting-algo-func-hs
+name:           startup-haskell
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/githubuser/sorting-algo-func-hs#readme>
-homepage:       https://github.com/githubuser/sorting-algo-func-hs#readme
-bug-reports:    https://github.com/githubuser/sorting-algo-func-hs/issues
+description:    Please see the README on GitHub at <https://github.com/githubuser/startup-haskell#readme>
+homepage:       https://github.com/githubuser/startup-haskell#readme
+bug-reports:    https://github.com/githubuser/startup-haskell/issues
 author:         Author name here
 maintainer:     example@example.com
 copyright:      2023 Author name here
@@ -21,7 +21,7 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/githubuser/sorting-algo-func-hs
+  location: https://github.com/githubuser/startup-haskell
 
 library
   exposed-modules:
@@ -35,7 +35,7 @@ library
       base >=4.7 && <5
   default-language: Haskell2010
 
-executable sorting-algo-func-hs-exe
+executable startup-haskell-exe
   main-is: Main.hs
   other-modules:
       Paths_sorting_algo_func_hs
@@ -44,10 +44,10 @@ executable sorting-algo-func-hs-exe
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , sorting-algo-func-hs
+    , startup-haskell
   default-language: Haskell2010
 
-test-suite sorting-algo-func-hs-test
+test-suite startup-haskell-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
@@ -57,5 +57,5 @@ test-suite sorting-algo-func-hs-test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , sorting-algo-func-hs
+    , startup-haskell
   default-language: Haskell2010

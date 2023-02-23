@@ -1,4 +1,4 @@
-# Changelog for `sorting-algo-func-hs`
+# Changelog for `startup-haskell`
 
 All notable changes to this project will be documented in this file.
 
