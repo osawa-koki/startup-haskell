@@ -35,6 +35,8 @@ main = do
     {- パッケージの利用 -}
     let width = 100
         height = 100
-        pixelAt' _ _ = PixelRGB8 255 0 0
+        pixelAt' xPos yPos
+            | xPos >= 25 && xPos < 75 && yPos >= 25 && yPos < 75 = PixelRGB8 0 0 255
+            | otherwise = PixelRGB8 255 0 0
         image = generateImage pixelAt' width height
-    savePngImage "red_image.png" (ImageRGB8 image)
+    savePngImage "red_and_blue_image.png" (ImageRGB8 image)
