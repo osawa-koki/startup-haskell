@@ -13,3 +13,8 @@ main = do
         y = 20
         result = x + y
     putStrLn (show x ++ " + " ++ show y ++ " = " ++ show result)
+
+    putStrLn "Enter an integer: "
+    input <- getLine
+    let n = read input :: Integer
+    putStrLn ("You entered: " ++ show n)
