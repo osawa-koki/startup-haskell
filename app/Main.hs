@@ -20,3 +20,5 @@ main = do
     putStrLn ("You entered: " ++ show n)
 
     putStrLn (show n ++ " is even?: " ++ show (isEven n))
+
+    printNumbers n
