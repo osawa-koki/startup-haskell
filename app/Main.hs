@@ -1,6 +1,7 @@
 module Main (main) where
 
 import Lib
+import Codec.Picture
 
 main :: IO ()
 main = do
@@ -24,3 +25,9 @@ main = do
     printNumbers n
 
     putStrLn ("Factorial of " ++ show n ++ " is " ++ show (factorial n))
+
+    let width = 100
+        height = 100
+        pixelAt' _ _ = PixelRGB8 255 0 0
+        image = generateImage pixelAt' width height
+    savePngImage "red_image.png" (ImageRGB8 image)
