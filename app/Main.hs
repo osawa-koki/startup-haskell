@@ -22,3 +22,5 @@ main = do
     putStrLn (show n ++ " is even?: " ++ show (isEven n))
 
     printNumbers n
+
+    putStrLn ("Factorial of " ++ show n ++ " is " ++ show (factorial n))
