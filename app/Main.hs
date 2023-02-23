@@ -4,6 +4,9 @@ import Lib
 
 main :: IO ()
 main = do
+
+    putStrLn ("Hello World!!!")
+
     let x :: Integer
         x = 10
         y :: Integer
