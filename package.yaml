@@ -46,6 +46,7 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - startup-haskell
+    - JuicyPixels
 
 tests:
   startup-haskell-test:
